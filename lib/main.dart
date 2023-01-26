@@ -23,6 +23,7 @@ class MyApp extends ConsumerWidget {
       title: 'Twitter Clone',
       theme: AppTheme.theme,
       home: ref.watch(currentUserAccountProvider).when(
+
             data: (user) {
               if (user != null) {
                 return const HomeView();
